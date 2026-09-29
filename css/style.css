@@ -1,0 +1,704 @@
+/* =========================================================
+   PRIDAL VENTURES & CONSTRUCTIONS
+   Professional Website Styles
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.35);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-container {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-main {
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo-sub {
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #f5b400;
+}
+
+.nav-quote {
+    background: #f5b400;
+    color: #111 !important;
+    padding: 11px 18px;
+    border-radius: 4px;
+}
+
+.nav-quote:hover {
+    background: #fff;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    background-image: url("../images/hero-construction.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.2)
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding-top: 100px;
+    max-width: 850px;
+}
+
+.hero-tagline {
+    color: #f5b400;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 650px;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: #f5b400;
+    color: #111;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #111;
+}
+
+.btn-dark {
+    background: #171717;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: #f5b400;
+    color: #111;
+}
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-label {
+    display: inline-block;
+    color: #d39400;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading h2,
+.intro-text h2,
+.featured-content h2,
+.quote-content h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.1;
+    color: #171717;
+    margin-bottom: 20px;
+}
+
+.section-heading p {
+    color: #666;
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.intro {
+    background: #fff;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.intro-text p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.intro-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+-image img {
+    height: 500px;
+    object-fit: cover;
+    transition:/* =========================================================
+   PRIDAL VENTURES & CONSTRUCTIONS
+   Professional Website Styles
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.35);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-container {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-main {
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo-sub {
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #f5b400;
+}
+
+.nav-quote {
+    background: #f5b400;
+    color: #111 !important;
+    padding: 11px 18px;
+    border-radius: 4px;
+}
+
+.nav-quote:hover {
+    background: #fff;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    background-image: url("../images/hero-construction.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.2)
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding-top: 100px;
+    max-width: 850px;
+}
+
+.hero-tagline {
+    color: #f5b400;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 650px;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: #f5b400;
+    color: #111;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #111;
+}
+
+.btn-dark {
+    background: #171717;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: #f5b400;
+    color: #111;
+}
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-label {
+    display: inline-block;
+    color: #d39400;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading h2,
+.intro-text h2,
+.featured-content h2,
+.quote-content h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.1;
+    color: #171717;
+    margin-bottom: 20px;
+}
+
+.section-heading p {
+    color: #666;
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.intro {
+    background: #fff;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.intro-text p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.intro-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.intro-image img {
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.intro-image:hover img {
+    transform: scale(1.04);
+}
+
+.text-link {
+    display: inline-block;
+    color: #b57d00;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.text-link:hover {
+    color: #171717;
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services {
+    background: #f5f5f3;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 32px 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+}
+
+.service-icon {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 0.94rem;
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    color: #b57d00;
+    font-weight: 800;
+    font-size: 0.88rem;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 45px;
+}
+
+/* =========================================================
+   FEATURED PROJECT
+   ========================================================= */
+
+.featured-project {
+    background: #fff;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.featured-image {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.featured-image img {
+    height: 520px;￼Enter transform 0.6s ease;
+}
+
+.intro-image:hover img {
+    transform: scale(1.04);
+}
+
+.text-link {
+    display: inline-block;
+    color: #b57d00;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.text-link:hover {
+    color: #171717;
+}
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services {
+    background: #f5f5f3;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 32px 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+}
+
